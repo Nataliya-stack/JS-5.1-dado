@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+  </script>
+ <style>
+        body { text-align: center; font-family: sans-serif; }
+        img { width: 200px; height: 200px; margin-top: 20px; border-radius: 10px; transition: transform 0.1s;}
+        button { margin: 30px auto; padding: 10px 20px; font-size: 20px; cursor: pointer; border: 2px solid #fffbeb; color: #fffbeb; border-radius: 7px;}
+        button:disabled { background-color: #ccc; color: rgba(0, 0, 0, .5); transform: scale(1.2)}
+    </style>
+  <title>JS - 5.1</title>
+</head>
+
+<body class="container w-5/6 m-auto bg-amber-900">
+
+    <h1 class="text-7xl my-4 text-amber-50 mt-30 drop-shadow-[0_2px_10px_currentColor]" id="mensaje1">Dados</h1>
+    <div class="flex justify-center items-center container">
+      <img id="dado" src="./img/dado1.png" alt="Dados">
+    </div>
+    <br><br>
+    <button onclick="dadoTire()" id="btn">Tira los dados</button>
+
+  
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
